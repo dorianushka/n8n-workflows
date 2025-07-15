@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  n8n:
+    build: .
+    container_name: n8n
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://localhost:5678/
+      - BOT_TOKEN=${BOT_TOKEN}
+      - CHANNEL_ID=${CHANNEL_ID}
+    volumes:
+      - ./n8n_data:/home/node/.n8n
+      - ./scripts:/scripts  # Mount your .py files here
+    restart: unless-stopped
