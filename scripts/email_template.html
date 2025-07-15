@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{subject}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        .content {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 0 0 10px 10px;
+        }
+        .highlight {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            margin: 20px 0;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+        .signature {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .company-info {
+            background-color: #34495e;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .cta-button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 15px 0;
+        }
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Prestige Production</div>
+        <p>Partnership Opportunity</p>
+    </div>
+    
+    <div class="content">
+        <h2>Hello {client_name},</h2>
+        
+        <p>I hope this message finds you well.</p>
+        
+        <p>I'm reaching out from <strong>Prestige Production</strong> to explore potential partnership opportunities with {company_text}.</p>
+        
+        <div class="highlight">
+            <p><strong>About Prestige Production:</strong></p>
+            <p>We specialize in high-quality production services and believe there could be great synergy between our organizations. Our team has extensive experience in:</p>
+            <ul>
+                <li>Video Production & Post-Production</li>
+                <li>Audio Engineering & Sound Design</li>
+                <li>Creative Content Development</li>
+                <li>Brand Strategy & Marketing</li>
+            </ul>
+        </div>
+        
+        <p>Would you be interested in a brief conversation to discuss how we might collaborate? I'd love to learn more about your current projects and explore potential synergies.</p>
+        
+        <div class="company-info">
+            <p><strong>Let's Connect!</strong></p>
+            <p>We're always excited to work with innovative companies and would love to explore how we can support your goals.</p>
+        </div>
+        
+        <div class="footer">
+            <p class="signature">Best regards,<br>
+            Dorian<br>
+            Prestige Production<br>
+            <a href="{tracking_click_url}?url=mailto:dorian@prestigeproduction.ch">dorian@prestigeproduction.ch</a></p>
+            
+            <p style="font-size: 12px; margin-top: 20px;">
+                This email was sent as part of our client outreach program. If you'd prefer not to receive future communications, please reply with "UNSUBSCRIBE" in the subject line.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Email Tracking Pixel -->
+    <img src="{tracking_pixel_url}" width="1" height="1" style="display:none;" alt="">
+</body>
+</html> 

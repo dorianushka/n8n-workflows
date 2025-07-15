@@ -13,6 +13,18 @@ services:
       - WEBHOOK_URL=http://localhost:5678/
       - BOT_TOKEN=${BOT_TOKEN}
       - CHANNEL_ID=${CHANNEL_ID}
+      - MONITOR_CHANNEL_ID=${MONITOR_CHANNEL_ID}
+      # Google Drive API environment variables
+      - CLIENT_ID=${CLIENT_ID}
+      - CLIENT_SECRET=${CLIENT_SECRET}
+      - FILE_ID=${FILE_ID}
+      - GOOGLE_TOKEN_JSON=${GOOGLE_TOKEN_JSON}
+      - GOOGLE_TOKEN_JSON_BASE64=${GOOGLE_TOKEN_JSON_BASE64}
+      # Email/SMTP configuration
+      - SMTP_SERVER=${SMTP_SERVER}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_USERNAME=${SMTP_USERNAME}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
     volumes:
       - ./n8n_data:/home/node/.n8n
       - ./scripts:/scripts  # Mount your .py files here
